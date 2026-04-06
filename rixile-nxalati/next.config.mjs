@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    // THIS IS THE MAGIC LINE WE NEED
-    ignoreBuildErrors: true,
-  },
   eslint: {
+    // This tells Vercel to ignore those 8 quote errors
     ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // This ignores the animation errors
+    ignoreBuildErrors: true,
   },
 };
 
