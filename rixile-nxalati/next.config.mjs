@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
-    // This is the CRITICAL line you were missing!
+    // This is the part that was missing in your last screenshot!
     ignoreBuildErrors: true,
   },
   eslint: {
